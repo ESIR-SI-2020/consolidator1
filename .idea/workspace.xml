@@ -2,22 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7f63a8-ab26-46ac-be26-ac37d52a7ab4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/main/java/EventModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaConsumerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaTopicConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/main/java/router/EventRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/main/java/user/UserEventsHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventModelUnsafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/EventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EventConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EventConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/EventConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/EventConsumerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/EventConsumerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/EventModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/EventConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaTopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaTopicConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/router/EventRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/router/EventRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/user/UserEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/user/UserEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/user/UserEventsHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EventConsumerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/EventModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/EventConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication$MessageListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication$MessageProducer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication$MessageProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaConsumerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaProducerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaTopicConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/router/EventRouter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/user/UserEventsHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/EventConsumerTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +79,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.esir.jxc.models.user" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KafkaApplication">
+  <component name="RunManager" selected="Spring Boot.KafkaApplication (1)">
     <configuration name="KafkaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.main.java.kafka.KafkaApplication" />
       <module name="user_event_handler" />
@@ -91,6 +108,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user_event_handler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.esir.jxc.models.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.esir.jxc.models.kafka.KafkaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.KafkaApplication (1)" />
         <item itemvalue="Application.KafkaApplication" />
         <item itemvalue="Spring Boot.KafkaApplication" />
       </list>
@@ -128,6 +159,8 @@
       <workItem from="1570537885176" duration="455000" />
       <workItem from="1570660246458" duration="10694000" />
       <workItem from="1570831443166" duration="1449000" />
+      <workItem from="1571055734579" duration="5712000" />
+      <workItem from="1571062140314" duration="5990000" />
     </task>
     <servers />
   </component>
