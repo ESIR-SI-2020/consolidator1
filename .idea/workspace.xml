@@ -2,33 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7f63a8-ab26-46ac-be26-ac37d52a7ab4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventModelUnsafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/user/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/EventModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/EventConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaProducerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/kafka/KafkaTopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaTopicConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/router/EventRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/router/EventRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/user/UserEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/user/UserEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/src/main/java/user/UserEventsHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EventConsumerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/EventModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/EventConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication$MessageListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication$MessageProducer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication$MessageProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaConsumerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaProducerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/kafka/KafkaTopicConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/router/EventRouter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/user/UserEventsHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/EventConsumerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventModelUnsafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/events/EventUnsafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/kafka/MessageProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/router/EventRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/router/EventRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/user/UserEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/esir/jxc/models/user/UserEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/user_event_handler.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/events/EventModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/events/EventModelUnsafe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/KafkaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/KafkaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/KafkaConsumerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/KafkaConsumerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/KafkaProducerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/KafkaProducerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/MessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/MessageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/MessageProducer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/MessageProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/kafka/MessageProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/router/EventRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/esir/jxc/models/router/EventRouter.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +53,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -83,6 +84,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.esir.jxc.models" />
       <recent name="fr.esir.jxc.models.user" />
     </key>
   </component>
@@ -160,7 +162,9 @@
       <workItem from="1570660246458" duration="10694000" />
       <workItem from="1570831443166" duration="1449000" />
       <workItem from="1571055734579" duration="5712000" />
-      <workItem from="1571062140314" duration="5990000" />
+      <workItem from="1571062140314" duration="10120000" />
+      <workItem from="1571085051369" duration="3726000" />
+      <workItem from="1571124467377" duration="12616000" />
     </task>
     <servers />
   </component>

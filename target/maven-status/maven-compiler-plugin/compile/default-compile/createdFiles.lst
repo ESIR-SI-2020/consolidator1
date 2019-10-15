@@ -1,0 +1,11 @@
+fr/esir/jxc/models/kafka/MessageProducer$1.class
+fr/esir/jxc/models/events/EventUnsafe.class
+fr/esir/jxc/models/kafka/KafkaConsumerConfig.class
+fr/esir/jxc/models/kafka/MessageListener.class
+fr/esir/jxc/models/kafka/KafkaTopicConfig.class
+fr/esir/jxc/models/user/UserEventHandler.class
+fr/esir/jxc/models/router/EventRouter.class
+fr/esir/jxc/models/kafka/KafkaProducerConfig.class
+fr/esir/jxc/models/kafka/KafkaApplication.class
+fr/esir/jxc/models/kafka/MessageProducer.class
+fr/esir/jxc/models/events/Event.class

@@ -1,13 +1,12 @@
 package fr.esir.jxc.models.kafka;
 
 
-import fr.esir.jxc.models.events.EventModelUnsafe;
+import fr.esir.jxc.models.events.Event;
+import fr.esir.jxc.models.events.EventAbstract;
+import fr.esir.jxc.models.events.EventUnsafe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.support.SendResult;
-import org.springframework.util.concurrent.ListenableFuture;
-import org.springframework.util.concurrent.ListenableFutureCallback;
 
 public class MessageProducer {
 
@@ -18,30 +17,17 @@ public class MessageProducer {
     private KafkaTemplate<String, String> kafkaTemplate;
 
     @Autowired
-    private KafkaTemplate<String, EventModelUnsafe> EventModelUnsafekafkaTemplate;
+    private KafkaTemplate<String, Event> eventkafkaTemplate;
 
-    public void sendMessage(final String message) {
+    @Autowired
+    private KafkaTemplate<String, EventUnsafe> eventUnsafekafkaTemplate;
 
-        ListenableFuture<SendResult<String, String>> future = kafkaTemplate.send("eventTopic", message);
-
-        future.addCallback(new ListenableFutureCallback<SendResult<String, String>>() {
-
-            @Override
-            public void onSuccess(SendResult<String, String> result) {
-                System.out.println("Sent message=[" + message + "] with offset=[" + result.getRecordMetadata().offset() + "]");
-            }
-
-            @Override
-            public void onFailure(Throwable ex) {
-                System.out.println("Unable to send message=[" + message + "] due to : " + ex.getMessage());
-            }
-        });
-    }
-
-    public void sendEventModelMessage(EventModelUnsafe msg) {
-        EventModelUnsafekafkaTemplate.send(eventModelTopicName, msg);
-
+    public void sendEventModelMessage(Event msg) {
+        eventkafkaTemplate.send(eventModelTopicName, msg);
     }
 
 
+    public void sendEventUnsafeModelMessage(EventUnsafe msg) {
+        eventUnsafekafkaTemplate.send(eventModelTopicName,msg);
+    }
 }

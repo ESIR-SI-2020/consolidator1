@@ -1,6 +1,8 @@
 package fr.esir.jxc.models.kafka;
 
-import fr.esir.jxc.models.events.EventModelUnsafe;
+import fr.esir.jxc.models.events.Event;
+import fr.esir.jxc.models.events.EventAbstract;
+import fr.esir.jxc.models.events.EventUnsafe;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,7 +24,7 @@ public class KafkaConsumerConfig {
     private String bootstrapAddress;
 
 
-    public DefaultKafkaConsumerFactory<String, EventModelUnsafe> EventModelUnsafeconsumerFactory() {
+    public DefaultKafkaConsumerFactory<String, EventAbstract> eventModelUnsafeconsumerFactory() {
         Map<String, Object> props = new HashMap<String, Object>();
         props.put(
                 ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
@@ -37,16 +39,20 @@ public class KafkaConsumerConfig {
         props.put(
                 ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
                 JsonDeserializer.class);
-        return new DefaultKafkaConsumerFactory<String, EventModelUnsafe>(props, new StringDeserializer(), new JsonDeserializer<EventModelUnsafe>(EventModelUnsafe.class));
+        final JsonDeserializer<EventAbstract> jsonDeserializer= new JsonDeserializer<>(EventAbstract.class);
+        jsonDeserializer.addTrustedPackages("*");
+        return new DefaultKafkaConsumerFactory<String, EventAbstract>(props, new StringDeserializer(),jsonDeserializer);
     }
 
     @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, EventModelUnsafe>
-    EventModelUnsafekafkaListenerContainerFactory() {
-        ConcurrentKafkaListenerContainerFactory<String, EventModelUnsafe> factory
-                = new ConcurrentKafkaListenerContainerFactory<String, EventModelUnsafe>();
-        factory.setConsumerFactory(EventModelUnsafeconsumerFactory());
+    public ConcurrentKafkaListenerContainerFactory<String, EventAbstract>
+    eventModelUnsafekafkaListenerContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, EventAbstract> factory
+                = new ConcurrentKafkaListenerContainerFactory<String, EventAbstract>();
+        factory.setConsumerFactory(eventModelUnsafeconsumerFactory());
         return factory;
     }
+
+
 
 }
