@@ -1,8 +1,8 @@
-package fr.esir.jxc.models.events;
+package fr.esir.jxc.models.events.models;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-public class Event extends  EventAbstract{
+public class Event extends EventAbstract {
     private String eventName;
     private ObjectNode body;
 

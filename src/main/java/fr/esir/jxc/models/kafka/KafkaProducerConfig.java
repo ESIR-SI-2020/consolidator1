@@ -2,8 +2,8 @@ package fr.esir.jxc.models.kafka;
 
 
 
-import fr.esir.jxc.models.events.Event;
-import fr.esir.jxc.models.events.EventUnsafe;
+import fr.esir.jxc.models.events.models.Event;
+import fr.esir.jxc.models.events.models.EventUnsafe;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

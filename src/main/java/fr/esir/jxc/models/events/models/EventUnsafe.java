@@ -1,8 +1,7 @@
-package fr.esir.jxc.models.events;
+package fr.esir.jxc.models.events.models;
 
-import com.fasterxml.jackson.databind.JsonNode;
 
-public class EventUnsafe extends EventAbstract  {
+public class EventUnsafe extends EventAbstract {
     private String eventName;
     private String body;
 

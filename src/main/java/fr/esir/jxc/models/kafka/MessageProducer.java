@@ -1,9 +1,8 @@
 package fr.esir.jxc.models.kafka;
 
 
-import fr.esir.jxc.models.events.Event;
-import fr.esir.jxc.models.events.EventAbstract;
-import fr.esir.jxc.models.events.EventUnsafe;
+import fr.esir.jxc.models.events.models.Event;
+import fr.esir.jxc.models.events.models.EventUnsafe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
