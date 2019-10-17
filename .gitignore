@@ -23,7 +23,7 @@
 hs_err_pid*
 
 #.idea repository
-./idea
+.idea/
 
 #target repository
-target
+target/
