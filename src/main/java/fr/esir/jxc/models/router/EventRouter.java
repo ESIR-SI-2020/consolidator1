@@ -1,6 +1,7 @@
 package fr.esir.jxc.models.router;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import fr.esir.jxc.models.Json;
 import fr.esir.jxc.models.events.*;
 import fr.esir.jxc.models.events.models.Event;
 import fr.esir.jxc.models.user.UserEventsHandler;
@@ -19,8 +20,8 @@ public class EventRouter {
     private final ObjectMapper objectMapper;
     private final UserEventsHandler eventsHandler;
 
-    public EventRouter(@Autowired ObjectMapper objectMapper, @Autowired UserEventsHandler eventsHandler) {
-        this.objectMapper = objectMapper;
+    public EventRouter( @Autowired UserEventsHandler eventsHandler) {
+        this.objectMapper = Json.APP_OBJECT_MAPPER;
         this.eventsHandler = eventsHandler;
     }
 
@@ -31,7 +32,7 @@ public class EventRouter {
                 handleEvent(eventModel, UserAdded.class, this.eventsHandler::handleUserCreatedEvent);
                 break;
             case "USER_DELETED":
-                handleEvent(eventModel, UserDeleted.class, this.eventsHandler::handeleUserDeletedEvent);
+                handleEvent(eventModel, UserDeleted.class, this.eventsHandler::handleUserDeletedEvent);
                 break;
             case "ARTICLE_ADDED":
                 handleEvent(eventModel, ArticleAdded.class,this.eventsHandler::handleArticleAddedEvent);

@@ -4,6 +4,8 @@ import java.util.UUID;
 
 import fr.esir.jxc.models.user.requests.AddUserRequest;
 import lombok.Value;
+import lombok.experimental.NonFinal;
+import lombok.experimental.PackagePrivate;
 
 @Value
 public class UserAdded {
@@ -13,13 +15,14 @@ public class UserAdded {
     String password;
     String email;
 
-    public static UserAdded of(AddUserRequest user) {
 
+    public static UserAdded of(AddUserRequest user) {
         return new UserAdded(
                 UUID.randomUUID().toString(),
                 user.getUsername(),
                 Security.hash(user.getPassword()),
                 user.getEmail()
         );
+
     }
 }

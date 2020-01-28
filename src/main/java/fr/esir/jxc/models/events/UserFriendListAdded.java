@@ -4,7 +4,7 @@ import fr.esir.jxc.models.user.requests.AddUserFriendListRequest;
 import lombok.Value;
 
 @Value
-public class UserFriendListAdded {
+public class   UserFriendListAdded {
 
     private String email;
     private String emailToAdd;
