@@ -50,7 +50,7 @@ public class UsersEventHandler {
                     final User userUpdated = new User(
                             sourceUser.getEmail(),
                             sourceUser.getUsername(),
-                            passwordUpdated.getNewPassword(),
+                            BCrypt.hashpw(passwordUpdated.getNewPassword(),BCrypt.gensalt(4)),
                             sourceUser.getAddress(),
                             sourceUser.getFriends()
                     );
