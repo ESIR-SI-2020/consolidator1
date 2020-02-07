@@ -9,5 +9,8 @@
         <module name="user_event_handler" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="user_event_handler" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
